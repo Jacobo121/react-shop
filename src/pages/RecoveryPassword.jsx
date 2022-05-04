@@ -3,38 +3,18 @@ import '../styles/RecoveryPassword.scss';
 
 const RecoveryPassword = () => {
   return (
-    <div className="login">
-      <div className="form-container">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
-        <h1 className="title">Create a new password</h1>
-        <p className="subtitle">Enter a new passwrd for yue account</p>
-        <form action="/" className="form">
-          <label htmlFor="password" className="label">
-            Password
-          </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="*********"
-            className="input input-password"
-          />
-          <label htmlFor="new-password" className="label">
-            Password
-          </label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            className="input input-password"
-          />
-          <input
-            type="submit"
-            defaultValue="Confirm"
-            className="primary-button login-button"
-          />
-        </form>
-      </div>
-    </div>
+    <div className="PasswordRecovery">
+			<div className="PasswordRecovery-container">
+				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+				<h1 className="title">Password recovery</h1>
+				<p className="subtitle">Inform the email address used to create your account</p>
+				<form action="/" className="form">
+					<label htmlFor="email" className="label">Email address</label>
+					<input type="text" id="email" className="input input-email" />
+					<input type="submit" value="Confirm" className="primary-button login-button" />
+				</form>
+			</div>
+		</div>
   );
 };
 
