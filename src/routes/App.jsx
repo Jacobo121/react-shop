@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from '../containers/Layout';
-import Login from '../containers/Login.jsx'
+import Login from '../pages/Login.jsx'
 import RecoveryPasswordEmail from '../containers/RecoveryPasswordEmail';
 import Home from '../pages/Home.jsx';
 import NotFound from '../pages/NotFound';
