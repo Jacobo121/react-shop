@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/'
     },
     mode: 'development',
     resolve: {
@@ -48,6 +49,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+    }
 }
 
