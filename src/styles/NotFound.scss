@@ -1,0 +1,63 @@
+.NotFound {
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ups {
+    font-size: 50px;
+}
+
+/* ---------- Ball -----------*/
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(
+            circle at 0 0,
+            #C7C7C7 25%, #ACD9B2 70%);
+    animation: rebota 1s alternate infinite ease-in;
+  }
+  
+  .shadow{
+    width: 100px;
+    height: 1px;
+    background: #000;
+    box-shadow: 0 0 5px 5px #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 620px;
+    opacity: .2;
+    transform: scale(0.5);
+    animation: sombra 1s alternate infinite ease-in;
+  }
+  
+  @keyframes sombra{ 
+    
+    100%{
+      transform: scale(1);
+      opacity: .5
+    }
+  }
+  
+  @keyframes rebota{
+    90%{
+      height: 100px;
+    }
+    
+    100%{
+      transform: translateY(200px);
+      height: 80px;
+    }
+  }
+
+  .animation {
+    margin-left: 46%;
+  }
