@@ -9,7 +9,6 @@ const useGetProducts = (API) => {
     const response = await axios(API);
     setProducts(response.data);
     setIsLoading(false)
-    console.log(response.data);
   }, []);
 
   return {products, isLoading};
