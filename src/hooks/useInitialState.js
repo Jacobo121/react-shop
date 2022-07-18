@@ -12,7 +12,6 @@ const useInitialState = () => {
             ...state,
             cart: [...state.cart, payload]
         });
-        console.log(payload)
     };
     return {
         state,
