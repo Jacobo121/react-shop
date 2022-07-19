@@ -1,5 +1,6 @@
 import React from "react";
 import OrderItem from "../components/OrderItem.jsx";
+import MyOrder from "../containers/MyOrder.jsx";
 import "../styles/Checkout.scss";
 
 const Checkout = () => {
